@@ -114,7 +114,7 @@ class RPiLEDMatrix(Tk.Frame):
 		elif self.buttonClickCount[posX][posY] == 2:
 			self.buttonGrid[posX][posY]["bg"] = 'green'
 			sense.set_pixel(posX, posY, self.green)
-		     
+			
 		elif self.buttonClickCount[posX][posY] == 3:
 			self.buttonGrid[posX][posY]["bg"] = 'blue'
 			self.buttonClickCount[posX][posY] = 0
@@ -130,16 +130,4 @@ if __name__ == "__main__":
 	app = RPiLEDMatrix(root) 
 	root.mainloop()			
 
-
-
-
-		    
-        
-
-
-
-
-
-
-
-
+# -------------------------------- end - of - file ------------------------------------- # 
